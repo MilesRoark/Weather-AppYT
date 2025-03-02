@@ -24,7 +24,7 @@ async function checkWeather(city) {
     cityElement.innerHTML = data.name;
     tempElement.innerHTML = Math.round(data.main.temp) + "&#176;F";
     humidityElement.innerHTML = data.main.humidity + "%";
-    windElement.innerHTML = data.wind.speed + "km/h";
+    windElement.innerHTML = data.wind.speed + "mph";
 
     if (data.weather[0].main === "Clouds") {
       weatherIcon.src = "assets/cloudy.png";
