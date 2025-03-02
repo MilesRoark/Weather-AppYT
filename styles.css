@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  font-family: "Satisfy", sans-serif;
+}
+
+.card {
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(100deg, #ae00fe, #0d3d4a);
+  color: #fff;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+
+  .search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    input {
+      border: 0;
+      outline: 0;
+      background: #ebfffc;
+      color: #555;
+      padding: 10px 25px;
+      height: 60px;
+      border-radius: 30px;
+      flex: 1;
+      margin-right: 16px;
+      font-size: 1.125rem;
+    }
+
+    button {
+      border: 0;
+      outline: 0;
+      background: #ebfffc;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+
+      img {
+        width: 15px;
+      }
+    }
+  }
+}
+
+.weather {
+  .weather-icon {
+    width: 170px;
+    margin-top: 30px;
+  }
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 2.813rem;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+
+  .details {
+    display: flex;
+    align-items: ceter;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+
+    .col {
+      display: flex;
+      align-items: center;
+      text-align: left;
+
+      img {
+        width: 40px;
+        margin-right: 10px;
+      }
+    }
+  }
+  .humidity,
+  .wind {
+    font-size: 20px;
+    margin-top: -6px;
+  }
+
+  h1,
+  h2,
+  .humidity,
+  .wind {
+    font-family: "Satisfy", sans-serif;
+  }
+}
+
+.error {
+  text-align: center;
+  margin: 2rem 1rem;
+  font-size: 1.5rem;
+  display: none;
+
+  p {
+    border: 4px solid black;
+    font-family: "Satisfy", sans-serif;
+    padding: 2rem 0.2rem;
+    margin-left: -1.5rem;
+    color: rgb(252, 232, 57);
+    font-weight: bold;
+    box-shadow: 1rem 1rem 1rem 0.1rem;
+    border-radius: 10%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  body {
+    background-color: rgb(45, 22, 22);
+  }
+
+  .card {
+    background: linear-gradient(100deg, #dcb92f, #0f640d);
+    margin-top: 2.5rem;
+
+    .search {
+      display: flex;
+      flex-flow: column wrap;
+      gap: 0.5rem;
+      padding-left: -2rem;
+
+      input {
+        margin-left: -0.5rem;
+        max-width: 250px;
+      }
+
+      button {
+        margin: 1rem 0 -2rem -2.5rem;
+      }
+    }
+
+    .details {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 2rem;
+      margin-left: -2rem;
+    }
+  }
+}
